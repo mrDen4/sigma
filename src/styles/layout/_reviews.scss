@@ -1,0 +1,35 @@
+.reviews {
+
+    .reviews__row {
+        display: flex;
+        align-items: center;
+
+        .reviews__title {
+            margin: 0;
+        }
+
+        .reviews__link {
+            margin-right: auto;
+            color: $blue;
+            margin-left: 20px;
+        }
+
+        .reviews__btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            margin-right: 20px;
+            transition: .3s;
+
+            &:hover {
+                background: $blue;
+                color: #ffffff;
+            }
+        }
+    }
+
+    .reviews__slider {
+        display: flex;
+        margin-top: 30px;
+    }
+}

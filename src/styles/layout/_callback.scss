@@ -1,0 +1,51 @@
+.callback {
+    background: url('../images/callback-bg.png') center center no-repeat;
+    background-size: cover;
+
+    .callback__container {
+        color: #ffffff;
+    }
+
+    .callback__content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .callback__title {
+        color: #ffffff;
+    }
+
+    .callback__text {
+        font-size: 18px;
+    }
+
+    .callback__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form__row {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .form__section {
+        width: 45%;
+    }
+
+    .form__inp {
+        height: 40px;
+        background: none;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .form__btn {
+        width: 45%;
+    }
+}
