@@ -1,0 +1,94 @@
+.hot {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .hot__btns {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+        .btn__btn {
+            border: none;
+            background: none;
+            cursor: pointer;
+            height: 40px;
+            transition: .3s;
+            margin-right: 10px;
+
+            &:hover {
+                background: $blue;
+                color: #ffffff;
+            }
+
+            &--active {
+                background: $blue;
+                color: #ffffff;
+            }
+        }
+
+        .btns__btn--arrow {
+            margin-left: auto;
+            margin-right: 0;
+        }
+    }
+
+    .hot__slider {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        .slider__slide {
+            display: flex;
+            flex-direction: column;
+            width: 23%;
+            height: 380px;
+            background: #EEEEEE;
+
+            .slide__top {
+                height: 50%;
+                position: relative;
+                overflow: hidden;
+
+                .top__img {
+                    height: 100%;
+                }
+
+                .square {
+                    position: absolute;
+                    left: 15px;
+                    top: 15px;
+                    background: #FF8025;
+                    color: #ffffff;
+                    padding: 10px;
+                }
+            }
+
+            .slide__title {
+                width: 100%;
+                background: $blue;
+                color: #ffffff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 0;
+                padding: 10px 10px;
+                text-transform: uppercase;
+                font-size: 14px;
+            }
+
+            .slide__about {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 10px;
+                justify-content: space-between;
+
+                .about__item {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.services {
+    .services__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        .list__item {
+            width: 30%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+
+            .item__link {
+                color: $black;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                transition: .3s;
+
+                &:hover {
+                    color: $blue;
+                }
+            }
+            
+            .item__img {
+                margin-right: 10px;
+            }
+        }
+    }
+}
