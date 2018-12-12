@@ -20,9 +20,6 @@ body {
   overflow-x: hidden;
   position: relative; }
 
-.section {
-  background: #000; }
-
 .wrapper {
   width: 100%;
   height: 100%;
@@ -35,6 +32,18 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none; }
+
+.btn {
+  background: #0133A4;
+  color: #ffffff;
+  font-size: 12px;
+  border: none;
+  height: 40px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: .3s; }
+  .btn:hover {
+    background: #012371; }
 
 .header .header__top {
   background: #EEEEEE; }
@@ -130,3 +139,87 @@ ul {
         height: 2px;
         margin-top: 20px;
         background: #0133A4; }
+
+.hero {
+  background: url("../images/hero-bg.png") center center no-repeat;
+  background-size: cover;
+  height: 500px; }
+  .hero .hero__container {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%; }
+  .hero .hero__title {
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: bold; }
+  .hero .hero__form {
+    display: flex;
+    flex-direction: column; }
+  .hero .form__btns {
+    display: flex;
+    margin-bottom: 10px; }
+    .hero .form__btns .btns__btn {
+      color: #ffffff;
+      font-size: 12px;
+      cursor: pointer;
+      transition: .3s; }
+      .hero .form__btns .btns__btn:hover {
+        color: #0133A4; }
+      .hero .form__btns .btns__btn--active {
+        color: #0133A4; }
+  .hero .form__search {
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    padding: 30px; }
+    .hero .form__search .search__top {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between; }
+    .hero .form__search .search__title {
+      font-size: 24px; }
+    .hero .form__search .search__text {
+      color: #0133A4; }
+    .hero .form__search .search__form {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between; }
+    .hero .form__search .form__section {
+      width: 23%;
+      display: flex;
+      flex-direction: column; }
+    .hero .form__search .section__inp, .hero .form__search .section__select {
+      height: 40px;
+      padding-left: 10px;
+      background: #EEEEEE;
+      border: none;
+      color: #000000; }
+    .hero .form__search .section__inpts {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .hero .form__search .section__inpts .section__inp {
+        width: 45%; }
+  .hero .hero__selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background: #0133A4;
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+    max-width: 130px;
+    text-align: center;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    transition: .3s; }
+    .hero .hero__selection .selection__text {
+      margin: 0;
+      margin-top: 10px; }
+    .hero .hero__selection:hover {
+      background: #012371; }

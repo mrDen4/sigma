@@ -1,0 +1,121 @@
+.hero {
+    background: url('../images/hero-bg.png') center center no-repeat;
+    background-size: cover;
+    height: 500px;
+    .hero__container {
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 100%;
+    }
+
+    .hero__title {
+        font-size: 36px;
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    .hero__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form__btns {
+        display: flex;
+        margin-bottom: 10px;
+
+        .btns__btn {
+            color: #ffffff;
+            font-size: 12px;
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover {
+                color: $blue;
+            }
+
+            &--active {
+                color: $blue;
+            }
+        }
+    }
+
+    .form__search {
+        background: #F5F5F5;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+
+        .search__top {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .search__title {
+            font-size: 24px;
+        }
+
+        .search__text {
+            color: $blue;
+        }
+
+        .search__form {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+
+        .form__section {
+            width: 23%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section__inp, .section__select {
+            height: 40px;
+            padding-left: 10px;
+            background: #EEEEEE;
+            border: none;
+            color: #000000;
+        }
+
+        .section__inpts {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .section__inp {
+                width: 45%;
+            }
+        }
+    }
+
+    .hero__selection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        background: $blue;
+        position: absolute;
+        right: 0;
+        bottom: 100px;
+        max-width: 130px;
+        text-align: center;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+        transition: .3s;
+
+        .selection__text {
+            margin: 0;
+            margin-top: 10px;
+        }
+
+        &:hover {
+            background: darken($color: $blue, $amount: 10);
+        }
+    }
+}

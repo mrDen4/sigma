@@ -71,15 +71,17 @@
         </header>
         <section class="section hero">
             <div class="container hero__container">
-                <h1 class="title hero__title">Агентство недвижимости «Сигма» — более 17 лет опыта!</h1>
+                <h1 class="title hero__title">Агентство недвижимости «Сигма» — более 17 лет опыта!</h1>
                 <div class="hero__form">
                     <ul class="form__btns">
                         <li class="btns__btn btns__btn--active ">Покупка недвижимости</li>
                         <li class="btns__btn">Аренда недвижимости</li>
                     </ul>
                     <div class="form__search">
-                        <h2 class="title search__title">Подберите квартиру в подходящем районе</h2>
-                        <p class="search__text">Найдено квартир: 514</p>
+                        <div class="search__top">
+                            <h2 class="title search__title">Подберите квартиру в подходящем районе</h2>
+                            <p class="search__text">Найдено квартир: 514</p>
+                        </div>
                         <form class="search__form">
                             <div class="form__section">
                                 <p class="section__text">Район города</p>
@@ -95,16 +97,18 @@
                             </div>
                             <div class="form__section">
                                 <p class="section__text">Стоимость от и до</p>
-                                <input type="text" class="input section__inp">
-                                <input type="text" class="input section__inp">
+                                <div class="section__inpts">
+                                    <input type="text" class="input section__inp" placeholder="1000000">
+                                    <input type="text" class="input section__inp" placeholder="1000000">
+                                </div>
                             </div>
                             <button class="btn form__btn">Подобрать квартиру</button>
                         </form>
                     </div>
-                    <div class="hero__selection">
+                    <button class="hero__selection">
                         <img src="./assets/images/basket.png" alt="basket" class="selection__img">
                         <p class="selection__text">Подбор квартиры онлайн</p>
-                    </div>
+                    </button>
                 </div>
             </div>
         </section>
