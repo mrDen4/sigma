@@ -4,6 +4,10 @@
         display: flex;
         align-items: center;
 
+        @include tablets() {
+            flex-wrap: wrap;
+        }
+
         .reviews__title {
             margin: 0;
         }
@@ -32,5 +36,14 @@
     .reviews__slider {
         display: flex;
         margin-top: 30px;
+    }
+
+    .slider__slide {
+        margin-right: 20px;
+        overflow: hidden;
+
+        @include phones() {
+            margin-right: 0;
+        }
     }
 }

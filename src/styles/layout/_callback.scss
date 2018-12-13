@@ -10,6 +10,10 @@
         width: 50%;
         display: flex;
         flex-direction: column;
+
+        @include tablets() {
+            width: 100%;
+        }
     }
 
     .callback__title {
@@ -18,6 +22,10 @@
 
     .callback__text {
         font-size: 18px;
+
+        @include tablets() {
+            text-align: center;
+        }
     }
 
     .callback__form {
@@ -30,10 +38,23 @@
         align-items: flex-end;
         width: 100%;
         justify-content: space-between;
+
+        @include tablets() {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     .form__section {
         width: 45%;
+
+        @include tablets() {
+            width: 60%;
+        }
+
+        @include horizon() {
+            width: 100%;
+        }
     }
 
     .form__inp {
@@ -47,5 +68,14 @@
 
     .form__btn {
         width: 45%;
+
+        @include tablets() {
+            width: 60%;
+            margin-top: 30px;
+        }
+        
+        @include horizon() {
+            width: 100%;
+        }
     }
 }

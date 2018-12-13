@@ -12,10 +12,25 @@
             background: #EEEEEE;
             margin-bottom: 30px;
 
+            @include tablets() {
+                flex-direction: column;
+                width: 45%;
+            }
+
+            @include phones() {
+                width: 100%;
+                flex-direction: column;
+            }
+
             .item__left {
                 position: relative;
                 overflow: hidden;
                 width: 45%;
+
+                @include tablets() {
+                    width: 100%;
+                    max-height: 400px;
+                }
 
                 .left__aquare {
                     position: absolute;
@@ -29,6 +44,11 @@
 
                 .left__img {
                     height: 100%;
+
+                    @include tablets() {
+                        height: inherit;
+                        width: 100%;
+                    }
                 }
 
                 .left__title {
@@ -48,6 +68,10 @@
             .item__right {
                 width: 65%;
                 padding: 30px;
+
+                @include tablets() {
+                    width: 100%;
+                }
             }
 
             .right__list {

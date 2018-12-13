@@ -6,8 +6,16 @@
         display: flex;
         justify-content: space-between;
 
+        @include tablets() {
+            flex-direction: column;
+        }
+
         .footer__col {
             width: 15%;
+
+            @include tablets() {
+                width: 100%;
+            }
         }
 
         .footer__title {
@@ -63,11 +71,20 @@
         align-items: center;
         justify-content: space-between;
 
+        @include tablets() {
+            flex-direction: column;
+        }
+
         .footer__rp {
             display: flex;
             color: $black;
             text-decoration: none;
             transition: .3s;
+
+            @include tablets() {
+                flex-direction: column;
+                align-items: center;
+            }
 
             &:hover {
                 color: $blue;
@@ -75,6 +92,10 @@
 
             .rp__logo {
                 margin-left: 30px;
+
+                @include tablets() {
+                    margin-left: 0;
+                }
             }
         }
     }

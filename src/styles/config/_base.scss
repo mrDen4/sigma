@@ -57,9 +57,19 @@ list-style: none;
 .title {
   font-size: 36px;
   color: $black;
+
+  @include tablets() {
+    text-align: center;
+    font-size: 34px;
+  }
 }
 
 .section {
   padding-top: 50px;
   padding-bottom: 50px;
+
+  @include tablets() {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }

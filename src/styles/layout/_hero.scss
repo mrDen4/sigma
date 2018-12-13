@@ -1,7 +1,7 @@
 .hero {
     background: url('../images/hero-bg.png') center center no-repeat;
     background-size: cover;
-    height: 500px;
+    min-height: 500px;
     .hero__container {
         align-items: center;
         justify-content: center;
@@ -20,6 +20,11 @@
     .hero__form {
         display: flex;
         flex-direction: column;
+
+        @include tablets() {
+            width: 100%;
+            align-items: center;
+        }
     }
 
     .form__btns {
@@ -43,6 +48,13 @@
         }
     }
 
+    .form__btn {
+        @include tablets() {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+
     .form__search {
         background: #F5F5F5;
         display: flex;
@@ -54,10 +66,21 @@
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
+
+            @include tablets() {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
         }
 
         .search__title {
             font-size: 24px;
+
+            @include tablets() {
+                font-size: 20px;
+                text-align: center;
+            }
         }
 
         .search__text {
@@ -68,12 +91,22 @@
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
+
+            @include tablets() {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
         }
 
         .form__section {
             width: 23%;
             display: flex;
             flex-direction: column;
+
+            @include tablets() {
+                width: 100%;
+            }
         }
 
         .section__inp, .section__select {
@@ -82,6 +115,10 @@
             background: #EEEEEE;
             border: none;
             color: #000000;
+
+            @include tablets() {
+                width: 100%;
+            }
         }
 
         .section__inpts {
@@ -111,6 +148,11 @@
         border: none;
         cursor: pointer;
         transition: .3s;
+
+        @include tablets() {
+            position: static;
+            margin-top: 30px;
+        }
 
         .selection__text {
             margin: 0;

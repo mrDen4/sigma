@@ -1,12 +1,22 @@
 .header {
     .header__top {
         background: #EEEEEE;
+
+        @include tablets() {
+            padding-bottom: 20px;
+        }
     }
 
     .top__container, .bottom__container {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .top__container {
+        @include tablets() {
+            flex-direction: column;
+        }
     }
 
     .header__bottom {
@@ -18,11 +28,27 @@
         height: 100%;
         padding-top: 10px;
         padding-bottom: 10px;
+
+        @include tablets() {
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+    }
+
+    .bottom__logo {
+        @include tablets() {
+            display: flex;
+        }
     }
 
     .top__text {
         max-width: 270px;
         line-height: 17px;
+
+        @include tablets() {
+            text-align: center;
+        }
     }
 
     .top__socials {
@@ -88,6 +114,10 @@
     .bottom__menu {
         display: flex;
         height: 100%;
+
+        @include tablets() {
+            display: none;
+        }
 
         .menu__item {
             margin-right: 30px;

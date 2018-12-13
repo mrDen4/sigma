@@ -5,6 +5,13 @@
         align-items: center;
         justify-content: space-between;
 
+        @include tablets() {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
         .news__link {
             text-decoration: none;
             background: none;
@@ -23,6 +30,15 @@
         flex-direction: row;
         justify-content: space-between;
 
+        @include tablets() {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        @include horizon() {
+            flex-direction: column;
+        }
+
         .news__section {
             position: relative;
             overflow: hidden;
@@ -35,6 +51,16 @@
             flex-direction: column;
             padding: 20px;
             text-decoration: none;
+
+            @include tablets() {
+                width: 45%;
+                margin-bottom: 50px;
+            }
+
+            @include horizon() {
+                width: 100%;
+                margin-bottom: 50px;
+            }
 
             &--double {
                 background: none;
