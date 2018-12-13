@@ -103,7 +103,8 @@ ul {
   .header .top__contacts .contacts__phone {
     color: #444245;
     text-decoration: none;
-    transition: .3s; }
+    transition: .3s;
+    font-weight: bold; }
     .header .top__contacts .contacts__phone:hover {
       color: #0133A4; }
   .header .top__contacts .contacts__btn {
@@ -161,7 +162,9 @@ ul {
   .hero .hero__title {
     font-size: 36px;
     color: #ffffff;
-    font-weight: bold; }
+    font-weight: bold;
+    max-width: 550px;
+    text-align: center; }
   .hero .hero__form {
     display: flex;
     flex-direction: column; }
@@ -172,7 +175,8 @@ ul {
       color: #ffffff;
       font-size: 12px;
       cursor: pointer;
-      transition: .3s; }
+      transition: .3s;
+      margin-right: 10px; }
       .hero .form__btns .btns__btn:hover {
         color: #0133A4; }
       .hero .form__btns .btns__btn--active {
@@ -267,7 +271,9 @@ ul {
       flex-direction: column;
       width: 23%;
       height: 380px;
-      background: #EEEEEE; }
+      background: #EEEEEE;
+      overflow: hidden;
+      margin-right: 20px; }
       .hot .hot__slider .slider__slide .slide__top {
         height: 50%;
         position: relative;
@@ -383,7 +389,13 @@ ul {
   align-items: center;
   justify-content: space-between; }
   .news .news__top .news__link {
-    text-decoration: none; }
+    text-decoration: none;
+    background: none;
+    border: 1px solid #0133A4;
+    color: #0133A4; }
+    .news .news__top .news__link:hover {
+      color: #ffff;
+      background: #0133A4; }
 
 .news .news__list {
   display: flex;
@@ -399,7 +411,8 @@ ul {
     width: 22%;
     display: flex;
     flex-direction: column;
-    padding: 20px; }
+    padding: 20px;
+    text-decoration: none; }
     .news .news__list .news__section--double {
       background: none;
       justify-content: space-between;
@@ -408,7 +421,9 @@ ul {
       background: url("../images/news/2.png") center center no-repeat;
       background-size: cover;
       height: 45%;
-      padding: 20px; }
+      padding: 20px;
+      color: #ffff;
+      text-decoration: none; }
     .news .news__list .news__section .section__btn {
       text-decoration: none;
       text-align: center;
@@ -424,7 +439,8 @@ ul {
   .reviews .reviews__row .reviews__link {
     margin-right: auto;
     color: #0133A4;
-    margin-left: 20px; }
+    margin-left: 20px;
+    margin-top: 15px; }
   .reviews .reviews__row .reviews__btn {
     background: none;
     border: none;
@@ -484,6 +500,13 @@ ul {
     .footer .footer__top .footer__title {
       font-size: 14px;
       text-transform: uppercase; }
+      .footer .footer__top .footer__title::after {
+        content: '';
+        display: flex;
+        width: 100%;
+        height: 1px;
+        background: #0133A4;
+        margin-top: 10px; }
     .footer .footer__top .footer__list .footer__item {
       margin-bottom: 10px; }
       .footer .footer__top .footer__list .footer__item .item__text {

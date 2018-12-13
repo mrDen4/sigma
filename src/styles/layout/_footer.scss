@@ -13,6 +13,15 @@
         .footer__title {
             font-size: 14px;
             text-transform: uppercase;
+
+            &::after {
+                content: '';
+                display: flex;
+                width: 100%;
+                height: 1px;
+                background: $blue;
+                margin-top: 10px;
+            }
         }
 
         .footer__list {
