@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сигма</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__top">
+                <div class="container top__container">
+                    <p class="top__text">
+                        Срочный выкуп и быстрая продажа недвижимости в Челябинске и области
+                    </p>
+                    <ul class="top__socials">
+                        <li class="socials__item">
+                            <a href="#" class="item__link">
+                                <img src="./assets/images/socials/instagram.png" alt="instagram" class="link__img">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="item__link">
+                                <img src="./assets/images/socials/facebook.png" alt="facebook" class="link__img">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="item__link">
+                                <img src="./assets/images/socials/vk.png" alt="vk" class="link__img">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="top__address">
+                        <p class="address__text"><i class="fas fa-map-marker-alt"></i> г. Челябинск, ул. Братьев
+                            Кашириных 86</p>
+                    </div>
+                    <a href="mailto:74sigma@mail.ru" class="top__mail">
+                        <i class="fas fa-envelope"></i>
+                        74sigma@mail.ru
+                    </a>
+                    <div class="top__contacts">
+                        <a href="tel:+73517768570" class="contacts__phone">+7 (351) 776‒85‒70</a>
+                        <button class="button contacts__btn">Обратный звонок</button>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="container bottom__container">
+                    <a href="#" class="bottom__logo">
+                        <img src="./assets/images/logo.png" alt="Sigma74" class="logo__img">
+                    </a>
+                    <ul class="bottom__menu">
+                        <li class="menu__item"><a href="#" class="item__link">Главная</a></li>
+                        <li class="menu__item"><a href="#" class="item__link">Недвижимость</a></li>
+                        <li class="menu__item"><a href="#" class="item__link">услуги</a></li>
+                        <li class="menu__item"><a href="#" class="item__link">Наши работы</a></li>
+                        <li class="menu__item"><a href="#" class="item__link">Полезные материалы</a></li>
+                        <li class="menu__item"><a href="#" class="item__link">География продаж</a></li>
+                        <li class="menu__item"><a href="#" class="item__link">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="section new">
+            <div class="container new__container">
+                <h1 class="title new__title">Недвижимость «Новая квартира»</h1>
+                <div class="new__content">
+                    <form class="new__properties">
+                        <div class="properties__section">
+                            <input type="checkbox" id="1-room" class="section__inp">
+                            <label class="section__label" for="1-room">1 комната</label>
+                            <input type="checkbox" id="4-room" class="section__inp">
+                            <label class="section__label" for="4-room">4 комнаты</label>
+                            <input type="checkbox" id="2-room" class="section__inp">
+                            <label class="section__label" for="2-room">2 комнаты</label>
+                            <input type="checkbox" id="5-room" class="section__inp">
+                            <label class="section__label" for="5-room">5 комнаты</label>
+                            <input type="checkbox" id="3-room" class="section__inp">
+                            <label class="section__label" for="3-room">3 комнаты</label>
+                            <input type="checkbox" id="6-room" class="section__inp">
+                            <label class="section__label" for="6-room">6+ комнат</label>
+                            <input type="checkbox" id="studio" class="section__inp">
+                            <label class="section__label" for="studio">Студия</label>
+                            <input type="checkbox" id="penthouse" class="section__inp">
+                            <label class="section__label" for="penthouse">Пентхаус</label>
+                        </div>
+                        <div class="properties__section">
+                            <div class="section__number">
+                                <input type="text" class="number__inp" name="priceFrom" placeholder="от 1 000 000 руб">
+                                <input type="text" class="number__inp" name="priceTo" placeholder="до 1 000 000 руб">
+                            </div>
+                            <div class="section__square">
+                                <input min="0" max="180" value="0,70" name="square" type="range">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="section hot">
+            <div class="container hot__container">
+                <h2 class="title hot__title">Горячие предложение</h2>
+                <ul class="hot__btns">
+                    <li class="btns__btn">
+                        <button class="btn__btn btn__btn--active">Новая квартира</button>
+                    </li>
+                    <li class="btns__btn">
+                        <button class="btn__btn">Вторичное жилье</button>
+                    </li>
+                    <li class="btns__btn">
+                        <button class="btn__btn">Дома</button>
+                    </li>
+                    <li class="btns__btn">
+                        <button class="btn__btn">Земельные участки</button>
+                    </li>
+                    <li class="btns__btn">
+                        <button class="btn__btn">Коммерческая недвижимость</button>
+                    </li>
+                    <li class="btns__btn">
+                        <button class="btn__btn">Сад</button>
+                    </li>
+                    <li class="btns__btn">
+                        <button class="btn__btn">Гараж</button>
+                    </li>
+                    <li class="btns__btn btns__btn--arrow">
+                        <button class="btn__btn btn__btn--arrow btn__btn--arrow-left"><img src="./assets/images/left-arrow.png"
+                                alt="arrow" class="btn__img"></button>
+                        <button class="btn__btn btn__btn--arrow btn__btn--arrow-right"><img src="./assets/images/right-arrow.png"
+                                alt="arrow" class="btn__img"></button>
+                    </li>
+                </ul>
+                <div class="hot__slider">
+                    <div class="slider__slide">
+                        <div class="slide__top">
+                            <img src="./assets/images/hot/1.png" alt="1" class="top__img">
+                            <div class="square">
+                                75 616 ₽ за м²
+                            </div>
+                        </div>
+                        <h2 class="slide__title">Однакомнатная квартира «ЖК жемчужина»</h2>
+                        <ul class="slide__about">
+                            <li class="about__item">
+                                <b>Адрес:</b> Женевский бульвар, дом 8
+                            </li>
+                            <li class="about__item">
+                                <b>Площадь:</b> общая 65, жилая 57, кухня 12
+                            </li>
+                            <li class="about__item">
+                                <b>Количество комнат:</b> 3
+                            </li>
+                            <li class="about__item">
+                                <b>Этаж:</b> пятый этаж в пятиэтажном доме
+                            </li>
+                            <li class="about__item">
+                                <b>Цена:</b> 4 446 200 ₽ или 75 616 ₽ за м²
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slide__top">
+                            <img src="./assets/images/hot/1.png" alt="1" class="top__img">
+                            <div class="square">
+                                75 616 ₽ за м²
+                            </div>
+                        </div>
+                        <h2 class="slide__title">Однакомнатная квартира «ЖК жемчужина»</h2>
+                        <ul class="slide__about">
+                            <li class="about__item">
+                                <b>Адрес:</b> Женевский бульвар, дом 8
+                            </li>
+                            <li class="about__item">
+                                <b>Площадь:</b> общая 65, жилая 57, кухня 12
+                            </li>
+                            <li class="about__item">
+                                <b>Количество комнат:</b> 3
+                            </li>
+                            <li class="about__item">
+                                <b>Этаж:</b> пятый этаж в пятиэтажном доме
+                            </li>
+                            <li class="about__item">
+                                <b>Цена:</b> 4 446 200 ₽ или 75 616 ₽ за м²
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slide__top">
+                            <img src="./assets/images/hot/1.png" alt="1" class="top__img">
+                            <div class="square">
+                                75 616 ₽ за м²
+                            </div>
+                        </div>
+                        <h2 class="slide__title">Однакомнатная квартира «ЖК жемчужина»</h2>
+                        <ul class="slide__about">
+                            <li class="about__item">
+                                <b>Адрес:</b> Женевский бульвар, дом 8
+                            </li>
+                            <li class="about__item">
+                                <b>Площадь:</b> общая 65, жилая 57, кухня 12
+                            </li>
+                            <li class="about__item">
+                                <b>Количество комнат:</b> 3
+                            </li>
+                            <li class="about__item">
+                                <b>Этаж:</b> пятый этаж в пятиэтажном доме
+                            </li>
+                            <li class="about__item">
+                                <b>Цена:</b> 4 446 200 ₽ или 75 616 ₽ за м²
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slide__top">
+                            <img src="./assets/images/hot/1.png" alt="1" class="top__img">
+                            <div class="square">
+                                75 616 ₽ за м²
+                            </div>
+                        </div>
+                        <h2 class="slide__title">Однакомнатная квартира «ЖК жемчужина»</h2>
+                        <ul class="slide__about">
+                            <li class="about__item">
+                                <b>Адрес:</b> Женевский бульвар, дом 8
+                            </li>
+                            <li class="about__item">
+                                <b>Площадь:</b> общая 65, жилая 57, кухня 12
+                            </li>
+                            <li class="about__item">
+                                <b>Количество комнат:</b> 3
+                            </li>
+                            <li class="about__item">
+                                <b>Этаж:</b> пятый этаж в пятиэтажном доме
+                            </li>
+                            <li class="about__item">
+                                <b>Цена:</b> 4 446 200 ₽ или 75 616 ₽ за м²
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slide__top">
+                            <img src="./assets/images/hot/1.png" alt="1" class="top__img">
+                            <div class="square">
+                                75 616 ₽ за м²
+                            </div>
+                        </div>
+                        <h2 class="slide__title">Однакомнатная квартира «ЖК жемчужина»</h2>
+                        <ul class="slide__about">
+                            <li class="about__item">
+                                <b>Адрес:</b> Женевский бульвар, дом 8
+                            </li>
+                            <li class="about__item">
+                                <b>Площадь:</b> общая 65, жилая 57, кухня 12
+                            </li>
+                            <li class="about__item">
+                                <b>Количество комнат:</b> 3
+                            </li>
+                            <li class="about__item">
+                                <b>Этаж:</b> пятый этаж в пятиэтажном доме
+                            </li>
+                            <li class="about__item">
+                                <b>Цена:</b> 4 446 200 ₽ или 75 616 ₽ за м²
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slide__top">
+                            <img src="./assets/images/hot/1.png" alt="1" class="top__img">
+                            <div class="square">
+                                75 616 ₽ за м²
+                            </div>
+                        </div>
+                        <h2 class="slide__title">Однакомнатная квартира «ЖК жемчужина»</h2>
+                        <ul class="slide__about">
+                            <li class="about__item">
+                                <b>Адрес:</b> Женевский бульвар, дом 8
+                            </li>
+                            <li class="about__item">
+                                <b>Площадь:</b> общая 65, жилая 57, кухня 12
+                            </li>
+                            <li class="about__item">
+                                <b>Количество комнат:</b> 3
+                            </li>
+                            <li class="about__item">
+                                <b>Этаж:</b> пятый этаж в пятиэтажном доме
+                            </li>
+                            <li class="about__item">
+                                <b>Цена:</b> 4 446 200 ₽ или 75 616 ₽ за м²
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slide__top">
+                            <img src="./assets/images/hot/1.png" alt="1" class="top__img">
+                            <div class="square">
+                                75 616 ₽ за м²
+                            </div>
+                        </div>
+                        <h2 class="slide__title">Однакомнатная квартира «ЖК жемчужина»</h2>
+                        <ul class="slide__about">
+                            <li class="about__item">
+                                <b>Адрес:</b> Женевский бульвар, дом 8
+                            </li>
+                            <li class="about__item">
+                                <b>Площадь:</b> общая 65, жилая 57, кухня 12
+                            </li>
+                            <li class="about__item">
+                                <b>Количество комнат:</b> 3
+                            </li>
+                            <li class="about__item">
+                                <b>Этаж:</b> пятый этаж в пятиэтажном доме
+                            </li>
+                            <li class="about__item">
+                                <b>Цена:</b> 4 446 200 ₽ или 75 616 ₽ за м²
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slide__top">
+                            <img src="./assets/images/hot/1.png" alt="1" class="top__img">
+                            <div class="square">
+                                75 616 ₽ за м²
+                            </div>
+                        </div>
+                        <h2 class="slide__title">Однакомнатная квартира «ЖК жемчужина»</h2>
+                        <ul class="slide__about">
+                            <li class="about__item">
+                                <b>Адрес:</b> Женевский бульвар, дом 8
+                            </li>
+                            <li class="about__item">
+                                <b>Площадь:</b> общая 65, жилая 57, кухня 12
+                            </li>
+                            <li class="about__item">
+                                <b>Количество комнат:</b> 3
+                            </li>
+                            <li class="about__item">
+                                <b>Этаж:</b> пятый этаж в пятиэтажном доме
+                            </li>
+                            <li class="about__item">
+                                <b>Цена:</b> 4 446 200 ₽ или 75 616 ₽ за м²
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section callback">
+            <div class="container callback__container">
+                <div class="callback__content">
+                    <h2 class="title callback__title">Остались вопросы?</h2>
+                    <p class="callback__text">Оставьте заявку и наш менеджер перезвонит вам в течение 30 минутс и с
+                        радостью ответит на все ваши вопросы!</p>
+                    <form class="callback__form">
+                        <div class="form__row">
+                            <div class="form__section">
+                                <p class="form__text">Ваше имя</p>
+                                <input type="text" class="form__inp" placeholder="Александра">
+                            </div>
+                            <div class="form__section">
+                                <p class="form__text">Ваш номер телефона</p>
+                                <input type="text" class="form__inp" placeholder="+7 (351) 776‒85‒70">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__section">
+                                <p class="form__text">Ваш номер телефона</p>
+                                <input type="text" class="form__inp" placeholder="+7 (351) 776‒85‒70">
+                            </div>
+                            <button class="btn form__btn">Оставить заявку</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="section plus">
+            <div class="container plus__container">
+                <h2 class="title plus__title">Преимущества работы «СИГМА»</h2>
+                <p>
+                    Специалисты Агентства недвижимости «СИГМА» работают на рынке недвижимости более 17 лет и хорошо
+                    известны участникам рынка высоким профессионализмом, ответственностью и порядочностью.
+                    Что мы можем предложить нашим клиентам?
+                    Отличительные черты АН «СИГМА» — забота об интересах всех участников сделки.
+                    Мы гарантируем своим клиентам абсолютную прозрачность и юридическую безопасность при совершении
+                    сделок.
+                    Мы принципиально не работаем с объектами и лицами в добросовестности, которых мы не уверены.
+                </p>
+                <h3>Все для максимального результата</h3>
+                <p>• полноценная реклама объекта клиента с использованием газет, журналов, Интернета, собственной
+                    информационной базы и др, источников</p>
+                <p>• реальная рыночная оценка объекта недвижимости (с учетом сроков, необходимых клиенту для совершения
+                    сделки)</p>
+                <p>• своевременная корректировка стоимости объекта в случае изменения ситуации на рынке.</p>
+                <h3>Экономия энергии и времени</h3>
+                <p>• полноценная реклама объекта клиента с использованием газет, журналов, Интернета, собственной
+                    информационной базы и др, источников</p>
+                <p>• реальная рыночная оценка объекта недвижимости (с учетом сроков, необходимых клиенту для совершения
+                    сделки)</p>
+                <p>• своевременная корректировка стоимости объекта в случае изменения ситуации на рынке.</p>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__top">
+                    <div class="footer__col">
+                        <a href="#" class="footer__logo">
+                            <img src="./assets/images/logo.png" alt="Sigma74" class="logo__img">
+                        </a>
+                        <p class="footer__text">
+                            Срочный выкуп и быстрая продажа недвижимости в Челябинске и области
+                        </p>
+                    </div>
+                    <div class="footer__col">
+                        <h2 class="title footer__title">навигация по сайту</h2>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="item__link">Главная</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Наши работы</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">География продаж</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h2 class="title footer__title">Недвижимость</h2>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <p class="item__text">Продажа</p>
+                            </li>
+                            <li class="footer__item"><a href="#" class="item__link">Новая квартира</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Вторичное жилье</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Земельные участки</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Коммерческая</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Cад</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Гараж</a></li>
+                            <li class="footer__item">
+                                <p class="item__text">Аренда</p>
+                            </li>
+                            <li class="footer__item"><a href="#" class="item__link">Вторичное жилье</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Коммерческая</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h2 class="title footer__title">наши услуги</h2>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="item__link">Как составить договор дарения,
+                                    купли-продажи</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Узаконивание перепланировок</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Оформление земельных участков</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Юридическое сопровождение сделки
+                                    купли-продажи</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Срочный выкуп квартир</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Оформление наследства</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Составление исковых заявлений в
+                                    суд,
+                                    ведение дел в суде</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Приватизация</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Ипотека, материнский (семейный)
+                                    капитал</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h2 class="title footer__title">Полезные материалы</h2>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="item__link">Новости и полезные статьи</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Вопросы-ответы</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Районы Челябинска</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Адреса и телефоны служб</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h2 class="title footer__title">Контакты</h2>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="item__link">+7 (351) 776‒85‒70</a>
+                                <button class="footer__btn">Обратный звонок</button>
+                            </li>
+                            <li class="footer__item"><a href="mailto:74sigma@mail.ru" class="item__link"><i class="fas fa-envelope"></i>
+                                    74sigma@mail.ru</a></li>
+                            <li class="footer__item"><i class="fas fa-map-marker-alt"></i> г. Челябинск, ул. Братьев
+                                Кашириных 86</li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__icon">
+                                    <img src="./assets/images/socials/instagram.png" alt="instagram" class="link__img">
+                                </a>
+                                <a href="#" class="footer__icon">
+                                    <img src="./assets/images/socials/facebook.png" alt="facebook" class="link__img">
+                                </a>
+                                <a href="#" class="footer__icon">
+                                    <img src="./assets/images/socials/vk.png" alt="vk" class="link__img">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__bot">
+                    <p class="footer__text">© Агенство недвижимости «СИГМА», 2018</p>
+                    <a href="#" class="footer__rp">
+                        <p class="rp__text">Создание и продвижение сайта</p>
+                        <img src="./assets/images/rp-logo.png" alt="logo" class="rp__logo">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/scripts/nativemultiple.jquery.min.js"></script>
+    <script src="./assets/scripts/main.js"></script>
+</body>
+
+</html>
