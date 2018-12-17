@@ -74,7 +74,8 @@
                 <h1 class="title new__title">Недвижимость «Новая квартира»</h1>
                 <div class="new__content">
                     <form class="new__properties">
-                        <div class="properties__section">
+                        <div class="properties__section properties__section--row">
+                            <h3 class="section__title">Количество комнат</h3>
                             <input type="checkbox" id="1-room" class="section__inp">
                             <label class="section__label" for="1-room">1 комната</label>
                             <input type="checkbox" id="4-room" class="section__inp">
@@ -92,7 +93,8 @@
                             <input type="checkbox" id="penthouse" class="section__inp">
                             <label class="section__label" for="penthouse">Пентхаус</label>
                         </div>
-                        <div class="properties__section">
+                        <div class="properties__section properties__section--padding">
+                            <h3 class="section__title">Цена: от и до</h3>
                             <div class="section__number">
                                 <input type="text" class="number__inp" name="priceFrom" placeholder="от 1 000 000 руб">
                                 <input type="text" class="number__inp" name="priceTo" placeholder="до 1 000 000 руб">
@@ -101,251 +103,180 @@
                                 <input min="0" max="180" value="0,70" name="price" type="range">
                             </div>
                         </div>
+                        <div class="properties__section">
+                            <h3 class="section__title">Основные параметры</h3>
+                            <h3 class="section__subtitle">Общая площадь, м²</h3>
+                            <div class="section__number">
+                                <input type="text" class="number__inp" name="priceFrom" placeholder="от 1 000 000 руб">
+                                <input type="text" class="number__inp" name="priceTo" placeholder="до 1 000 000 руб">
+                            </div>
+                            <div class="section__square">
+                                <input min="0" max="180" value="0,70" name="price" type="range">
+                            </div>
+                            <h3 class="section__title">Этаж: от и до</h3>
+                            <h3 class="section__subtitle">Общая площадь, м²</h3>
+                            <div class="section__number">
+                                <input type="text" class="number__inp" name="priceFrom" placeholder="от 1 000 000 руб">
+                                <input type="text" class="number__inp" name="priceTo" placeholder="до 1 000 000 руб">
+                            </div>
+                            <div class="section__square">
+                                <input min="0" max="180" value="0,70" name="price" type="range">
+                            </div>
+                            <h3 class="section__title">Количество комнат</h3>
+                            <input type="checkbox" id="brick" class="section__inp">
+                            <label class="section__label" for="1-room">Кирпичный</label>
+                            <input type="checkbox" id="monolith" class="section__inp">
+                            <label class="section__label" for="4-room">Монолитный</label>
+                            <input type="checkbox" id="panel" class="section__inp">
+                            <label class="section__label" for="2-room">Панельный</label>
+                            <input type="checkbox" id="wood" class="section__inp">
+                            <label class="section__label" for="5-room">Деревянный</label>
+                            <input type="checkbox" id="block" class="section__inp">
+                            <label class="section__label" for="3-room">Блочный</label>
+                        </div>
                     </form>
-                </div>
-            </div>
-        </section>
-        <section class="section hot">
-            <div class="container hot__container">
-                <h2 class="title hot__title">Горячие предложение</h2>
-                <ul class="hot__btns">
-                    <li class="btns__btn">
-                        <button class="btn__btn btn__btn--active">Новая квартира</button>
-                    </li>
-                    <li class="btns__btn">
-                        <button class="btn__btn">Вторичное жилье</button>
-                    </li>
-                    <li class="btns__btn">
-                        <button class="btn__btn">Дома</button>
-                    </li>
-                    <li class="btns__btn">
-                        <button class="btn__btn">Земельные участки</button>
-                    </li>
-                    <li class="btns__btn">
-                        <button class="btn__btn">Коммерческая недвижимость</button>
-                    </li>
-                    <li class="btns__btn">
-                        <button class="btn__btn">Сад</button>
-                    </li>
-                    <li class="btns__btn">
-                        <button class="btn__btn">Гараж</button>
-                    </li>
-                    <li class="btns__btn btns__btn--arrow">
-                        <button class="btn__btn btn__btn--arrow btn__btn--arrow-left"><img src="./assets/images/left-arrow.png"
-                                alt="arrow" class="btn__img"></button>
-                        <button class="btn__btn btn__btn--arrow btn__btn--arrow-right"><img src="./assets/images/right-arrow.png"
-                                alt="arrow" class="btn__img"></button>
-                    </li>
-                </ul>
-                <div class="hot__slider">
-                    <div class="slider__slide">
-                        <div class="slide__top">
-                            <img src="./assets/images/hot/1.png" alt="1" class="top__img">
-                            <div class="square">
-                                75 616 ₽ за м²
-                            </div>
-                        </div>
-                        <h2 class="slide__title">Однакомнатная квартира «ЖК жемчужина»</h2>
-                        <ul class="slide__about">
-                            <li class="about__item">
-                                <b>Адрес:</b> Женевский бульвар, дом 8
-                            </li>
-                            <li class="about__item">
-                                <b>Площадь:</b> общая 65, жилая 57, кухня 12
-                            </li>
-                            <li class="about__item">
-                                <b>Количество комнат:</b> 3
-                            </li>
-                            <li class="about__item">
-                                <b>Этаж:</b> пятый этаж в пятиэтажном доме
-                            </li>
-                            <li class="about__item">
-                                <b>Цена:</b> 4 446 200 ₽ или 75 616 ₽ за м²
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="slider__slide">
-                        <div class="slide__top">
-                            <img src="./assets/images/hot/1.png" alt="1" class="top__img">
-                            <div class="square">
-                                75 616 ₽ за м²
-                            </div>
-                        </div>
-                        <h2 class="slide__title">Однакомнатная квартира «ЖК жемчужина»</h2>
-                        <ul class="slide__about">
-                            <li class="about__item">
-                                <b>Адрес:</b> Женевский бульвар, дом 8
-                            </li>
-                            <li class="about__item">
-                                <b>Площадь:</b> общая 65, жилая 57, кухня 12
-                            </li>
-                            <li class="about__item">
-                                <b>Количество комнат:</b> 3
-                            </li>
-                            <li class="about__item">
-                                <b>Этаж:</b> пятый этаж в пятиэтажном доме
-                            </li>
-                            <li class="about__item">
-                                <b>Цена:</b> 4 446 200 ₽ или 75 616 ₽ за м²
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="slider__slide">
-                        <div class="slide__top">
-                            <img src="./assets/images/hot/1.png" alt="1" class="top__img">
-                            <div class="square">
-                                75 616 ₽ за м²
-                            </div>
-                        </div>
-                        <h2 class="slide__title">Однакомнатная квартира «ЖК жемчужина»</h2>
-                        <ul class="slide__about">
-                            <li class="about__item">
-                                <b>Адрес:</b> Женевский бульвар, дом 8
-                            </li>
-                            <li class="about__item">
-                                <b>Площадь:</b> общая 65, жилая 57, кухня 12
-                            </li>
-                            <li class="about__item">
-                                <b>Количество комнат:</b> 3
-                            </li>
-                            <li class="about__item">
-                                <b>Этаж:</b> пятый этаж в пятиэтажном доме
-                            </li>
-                            <li class="about__item">
-                                <b>Цена:</b> 4 446 200 ₽ или 75 616 ₽ за м²
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="slider__slide">
-                        <div class="slide__top">
-                            <img src="./assets/images/hot/1.png" alt="1" class="top__img">
-                            <div class="square">
-                                75 616 ₽ за м²
-                            </div>
-                        </div>
-                        <h2 class="slide__title">Однакомнатная квартира «ЖК жемчужина»</h2>
-                        <ul class="slide__about">
-                            <li class="about__item">
-                                <b>Адрес:</b> Женевский бульвар, дом 8
-                            </li>
-                            <li class="about__item">
-                                <b>Площадь:</b> общая 65, жилая 57, кухня 12
-                            </li>
-                            <li class="about__item">
-                                <b>Количество комнат:</b> 3
-                            </li>
-                            <li class="about__item">
-                                <b>Этаж:</b> пятый этаж в пятиэтажном доме
-                            </li>
-                            <li class="about__item">
-                                <b>Цена:</b> 4 446 200 ₽ или 75 616 ₽ за м²
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="slider__slide">
-                        <div class="slide__top">
-                            <img src="./assets/images/hot/1.png" alt="1" class="top__img">
-                            <div class="square">
-                                75 616 ₽ за м²
-                            </div>
-                        </div>
-                        <h2 class="slide__title">Однакомнатная квартира «ЖК жемчужина»</h2>
-                        <ul class="slide__about">
-                            <li class="about__item">
-                                <b>Адрес:</b> Женевский бульвар, дом 8
-                            </li>
-                            <li class="about__item">
-                                <b>Площадь:</b> общая 65, жилая 57, кухня 12
-                            </li>
-                            <li class="about__item">
-                                <b>Количество комнат:</b> 3
-                            </li>
-                            <li class="about__item">
-                                <b>Этаж:</b> пятый этаж в пятиэтажном доме
-                            </li>
-                            <li class="about__item">
-                                <b>Цена:</b> 4 446 200 ₽ или 75 616 ₽ за м²
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="slider__slide">
-                        <div class="slide__top">
-                            <img src="./assets/images/hot/1.png" alt="1" class="top__img">
-                            <div class="square">
-                                75 616 ₽ за м²
-                            </div>
-                        </div>
-                        <h2 class="slide__title">Однакомнатная квартира «ЖК жемчужина»</h2>
-                        <ul class="slide__about">
-                            <li class="about__item">
-                                <b>Адрес:</b> Женевский бульвар, дом 8
-                            </li>
-                            <li class="about__item">
-                                <b>Площадь:</b> общая 65, жилая 57, кухня 12
-                            </li>
-                            <li class="about__item">
-                                <b>Количество комнат:</b> 3
-                            </li>
-                            <li class="about__item">
-                                <b>Этаж:</b> пятый этаж в пятиэтажном доме
-                            </li>
-                            <li class="about__item">
-                                <b>Цена:</b> 4 446 200 ₽ или 75 616 ₽ за м²
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="slider__slide">
-                        <div class="slide__top">
-                            <img src="./assets/images/hot/1.png" alt="1" class="top__img">
-                            <div class="square">
-                                75 616 ₽ за м²
-                            </div>
-                        </div>
-                        <h2 class="slide__title">Однакомнатная квартира «ЖК жемчужина»</h2>
-                        <ul class="slide__about">
-                            <li class="about__item">
-                                <b>Адрес:</b> Женевский бульвар, дом 8
-                            </li>
-                            <li class="about__item">
-                                <b>Площадь:</b> общая 65, жилая 57, кухня 12
-                            </li>
-                            <li class="about__item">
-                                <b>Количество комнат:</b> 3
-                            </li>
-                            <li class="about__item">
-                                <b>Этаж:</b> пятый этаж в пятиэтажном доме
-                            </li>
-                            <li class="about__item">
-                                <b>Цена:</b> 4 446 200 ₽ или 75 616 ₽ за м²
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="slider__slide">
-                        <div class="slide__top">
-                            <img src="./assets/images/hot/1.png" alt="1" class="top__img">
-                            <div class="square">
-                                75 616 ₽ за м²
-                            </div>
-                        </div>
-                        <h2 class="slide__title">Однакомнатная квартира «ЖК жемчужина»</h2>
-                        <ul class="slide__about">
-                            <li class="about__item">
-                                <b>Адрес:</b> Женевский бульвар, дом 8
-                            </li>
-                            <li class="about__item">
-                                <b>Площадь:</b> общая 65, жилая 57, кухня 12
-                            </li>
-                            <li class="about__item">
-                                <b>Количество комнат:</b> 3
-                            </li>
-                            <li class="about__item">
-                                <b>Этаж:</b> пятый этаж в пятиэтажном доме
-                            </li>
-                            <li class="about__item">
-                                <b>Цена:</b> 4 446 200 ₽ или 75 616 ₽ за м²
-                            </li>
-                        </ul>
-                    </div>
+                    <ul class="new__list">
+                        <li class="list__item">
+                            <a href="#" class="item__link">
+                                <div class="item__top">
+                                    <img src="./assets/images/hot/1.png" alt="1" class="top__img">
+                                    <div class="square">
+                                        75 616 ₽ за м²
+                                    </div>
+                                </div>
+                                <h2 class="item__title">Однакомнатная квартира «ЖК жемчужина»</h2>
+                                <ul class="item__about">
+                                    <li class="about__item">
+                                        <b>Адрес:</b> Женевский бульвар, дом 8
+                                    </li>
+                                    <li class="about__item">
+                                        <b>Площадь:</b> общая 65, жилая 57, кухня 12
+                                    </li>
+                                    <li class="about__item">
+                                        <b>Количество комнат:</b> 3
+                                    </li>
+                                    <li class="about__item">
+                                        <b>Этаж:</b> пятый этаж в пятиэтажном доме
+                                    </li>
+                                    <li class="about__item">
+                                        <b>Цена:</b> 4 446 200 ₽ или 75 616 ₽ за м²
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="item__link">
+                                <div class="item__top">
+                                    <img src="./assets/images/hot/1.png" alt="1" class="top__img">
+                                    <div class="square">
+                                        75 616 ₽ за м²
+                                    </div>
+                                </div>
+                                <h2 class="item__title">Однакомнатная квартира «ЖК жемчужина»</h2>
+                                <ul class="item__about">
+                                    <li class="about__item">
+                                        <b>Адрес:</b> Женевский бульвар, дом 8
+                                    </li>
+                                    <li class="about__item">
+                                        <b>Площадь:</b> общая 65, жилая 57, кухня 12
+                                    </li>
+                                    <li class="about__item">
+                                        <b>Количество комнат:</b> 3
+                                    </li>
+                                    <li class="about__item">
+                                        <b>Этаж:</b> пятый этаж в пятиэтажном доме
+                                    </li>
+                                    <li class="about__item">
+                                        <b>Цена:</b> 4 446 200 ₽ или 75 616 ₽ за м²
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="item__link">
+                                <div class="item__top">
+                                    <img src="./assets/images/hot/1.png" alt="1" class="top__img">
+                                    <div class="square">
+                                        75 616 ₽ за м²
+                                    </div>
+                                </div>
+                                <h2 class="item__title">Однакомнатная квартира «ЖК жемчужина»</h2>
+                                <ul class="item__about">
+                                    <li class="about__item">
+                                        <b>Адрес:</b> Женевский бульвар, дом 8
+                                    </li>
+                                    <li class="about__item">
+                                        <b>Площадь:</b> общая 65, жилая 57, кухня 12
+                                    </li>
+                                    <li class="about__item">
+                                        <b>Количество комнат:</b> 3
+                                    </li>
+                                    <li class="about__item">
+                                        <b>Этаж:</b> пятый этаж в пятиэтажном доме
+                                    </li>
+                                    <li class="about__item">
+                                        <b>Цена:</b> 4 446 200 ₽ или 75 616 ₽ за м²
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="item__link">
+                                <div class="item__top">
+                                    <img src="./assets/images/hot/1.png" alt="1" class="top__img">
+                                    <div class="square">
+                                        75 616 ₽ за м²
+                                    </div>
+                                </div>
+                                <h2 class="item__title">Однакомнатная квартира «ЖК жемчужина»</h2>
+                                <ul class="item__about">
+                                    <li class="about__item">
+                                        <b>Адрес:</b> Женевский бульвар, дом 8
+                                    </li>
+                                    <li class="about__item">
+                                        <b>Площадь:</b> общая 65, жилая 57, кухня 12
+                                    </li>
+                                    <li class="about__item">
+                                        <b>Количество комнат:</b> 3
+                                    </li>
+                                    <li class="about__item">
+                                        <b>Этаж:</b> пятый этаж в пятиэтажном доме
+                                    </li>
+                                    <li class="about__item">
+                                        <b>Цена:</b> 4 446 200 ₽ или 75 616 ₽ за м²
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="item__link">
+                                <div class="item__top">
+                                    <img src="./assets/images/hot/1.png" alt="1" class="top__img">
+                                    <div class="square">
+                                        75 616 ₽ за м²
+                                    </div>
+                                </div>
+                                <h2 class="item__title">Однакомнатная квартира «ЖК жемчужина»</h2>
+                                <ul class="item__about">
+                                    <li class="about__item">
+                                        <b>Адрес:</b> Женевский бульвар, дом 8
+                                    </li>
+                                    <li class="about__item">
+                                        <b>Площадь:</b> общая 65, жилая 57, кухня 12
+                                    </li>
+                                    <li class="about__item">
+                                        <b>Количество комнат:</b> 3
+                                    </li>
+                                    <li class="about__item">
+                                        <b>Этаж:</b> пятый этаж в пятиэтажном доме
+                                    </li>
+                                    <li class="about__item">
+                                        <b>Цена:</b> 4 446 200 ₽ или 75 616 ₽ за м²
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
