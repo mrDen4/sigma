@@ -48,12 +48,32 @@
             }
         }
 
+        .number__inp {
+            width: 48%;
+        }
+
         .section__title {
             width: 100%;
             font-size: 14px;
             text-align: center;
             margin: 0;
             margin-bottom: 30px;
+        }
+
+        .section__square {
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .section__list {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .section__check {
+            width: 48%;
         }
     }
     .priceSlider {

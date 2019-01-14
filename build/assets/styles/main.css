@@ -820,12 +820,24 @@ ul {
         display: flex; }
       .new .properties__section--padding .number__inp {
         width: 48%; }
+    .new .properties__section .number__inp {
+      width: 48%; }
     .new .properties__section .section__title {
       width: 100%;
       font-size: 14px;
       text-align: center;
       margin: 0;
       margin-bottom: 30px; }
+    .new .properties__section .section__square {
+      margin-top: 20px;
+      margin-bottom: 40px; }
+    .new .properties__section .section__list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between; }
+    .new .properties__section .section__check {
+      width: 48%; }
   .new .priceSlider {
     width: 100%;
     position: relative; }
