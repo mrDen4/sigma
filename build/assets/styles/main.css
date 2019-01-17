@@ -793,11 +793,17 @@ ul {
   .new .new__content {
     display: flex;
     justify-content: space-between; }
+    @media screen and (max-width: 500px) {
+      .new .new__content {
+        flex-direction: column; } }
   .new .new__properties {
     width: 23%;
     display: flex;
     flex-direction: column;
     overflow: hidden; }
+    @media screen and (max-width: 500px) {
+      .new .new__properties {
+        width: 100%; } }
   .new .properties__section {
     background: #EEEEEE;
     margin-bottom: 15px;
@@ -808,11 +814,14 @@ ul {
       flex-direction: row;
       flex-wrap: wrap;
       align-items: center;
-      justify-content: center; }
+      justify-content: space-between; }
       .new .properties__section--row .section__inp {
         width: 10%; }
       .new .properties__section--row .section__label {
-        width: 35%; }
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px; }
     .new .properties__section--padding {
       padding-bottom: 40px; }
       .new .properties__section--padding .section__number {
@@ -835,9 +844,8 @@ ul {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      justify-content: space-between; }
-    .new .properties__section .section__check {
-      width: 48%; }
+      justify-content: space-between;
+      width: 100%; }
   .new .priceSlider {
     width: 100%;
     position: relative; }
@@ -928,11 +936,17 @@ ul {
     display: flex;
     flex-wrap: wrap;
     width: 75%; }
+    @media screen and (max-width: 500px) {
+      .new .new__list {
+        width: 100%; } }
     .new .new__list .list__item {
       width: 30%;
       margin-right: 12px;
       margin-left: 12px;
       margin-bottom: 30px; }
+      @media screen and (max-width: 500px) {
+        .new .new__list .list__item {
+          width: 100%; } }
     .new .new__list .item__link {
       display: flex;
       flex-direction: column;
@@ -983,3 +997,29 @@ ul {
       justify-content: space-between; }
       .new .new__list .item__about .about__item {
         margin-bottom: 5px; }
+  .new .section__inp {
+    display: none; }
+  .new .section__label {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .new .section__label {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    cursor: pointer; }
+  .new .section__label:before {
+    content: '';
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 25px;
+    height: 25px;
+    background: #ffffff; }
+  .new .section__inp:checked + label:before {
+    content: "\2713";
+    color: #0133A4;
+    text-align: center;
+    font-size: 20px; }

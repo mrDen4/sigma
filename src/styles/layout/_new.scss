@@ -4,6 +4,10 @@
     .new__content {
         display: flex;
         justify-content: space-between;
+
+        @include phones() {
+            flex-direction: column;
+        }
     }
 
     .new__properties {
@@ -11,6 +15,10 @@
         display: flex;
         flex-direction: column;
         overflow: hidden;
+
+        @include phones() {
+            width: 100%;
+        }
     }
 
     .properties__section {
@@ -24,14 +32,17 @@
             flex-direction: row;
             flex-wrap: wrap;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
 
             .section__inp {
                 width: 10%;
             }
 
             .section__label {
-                width: 35%;
+                width: 45%;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 15px;
             }
         }
 
@@ -70,10 +81,7 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
-        }
-
-        .section__check {
-            width: 48%;
+            width: 100%;
         }
     }
     .priceSlider {
@@ -201,11 +209,19 @@
         flex-wrap: wrap;
         width: 75%;
 
+        @include phones() {
+            width: 100%;
+        }
+
         .list__item {
             width: 30%;
             margin-right: 12px;
             margin-left: 12px;
             margin-bottom: 30px;
+
+            @include phones() {
+                width: 100%;
+            }
         }
 
         .item__link {
@@ -275,5 +291,41 @@
                 margin-bottom: 5px;
             }
         }
+    }
+
+    .section__inp {
+        display: none;
+    }
+
+    .section__label {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .section__label {
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+
+    .section__label:before {
+        content: '';
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 3px;
+        width: 25px;
+        height: 25px;
+        background: #ffffff;
+    }
+
+    .section__inp:checked + label:before {
+        content: "\2713";
+        color: $blue;
+        text-align: center;
+        font-size: 20px;
     }
 }
