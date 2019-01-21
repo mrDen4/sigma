@@ -1,0 +1,67 @@
+.contract {
+
+    .contract__plus {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 50px;
+
+        @include phones() {
+            flex-direction: column;
+        }
+
+        .plus__block {
+            width: 45%;
+            background: #EEEEEE;
+            padding: 20px;
+            min-height: 400px;
+
+            @include phones() {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .ready__img {
+        @include phones() {
+            width: 100%;
+        }
+    }
+
+    .contract__ready {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ready__price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include phones() {
+            flex-direction: column;
+        }
+
+        .price__text {
+            font-size: 18px;
+            color: $black;
+        }
+
+        .text__blue {
+            color: $blue;
+            font-size: 36px;
+        }
+
+        .price__btn {
+            margin-left: 50px;
+            width: 220px;
+
+            @include phones() {
+                margin-left: 0;
+            }
+        }
+    }
+}

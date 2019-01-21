@@ -1,0 +1,34 @@
+.location {
+
+    .location__map {
+        width: 100%;
+        height: 500px;
+        background: #C4C4C4;
+    }
+
+    .location__title {
+        margin-top: 0;
+    }
+
+    .location__btns {
+        
+        .btns__btn {
+            width: 150px;
+            margin-bottom: 40px;
+
+            @include phones() {
+                width: 45%;
+            }
+
+            &--white {
+                background: none;
+                color: $black;
+
+                &:hover {
+                    color: #ffffff;
+                    background: $blue;
+                }
+            }
+        }
+    }
+}
