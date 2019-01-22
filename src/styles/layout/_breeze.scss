@@ -1,0 +1,52 @@
+.breeze {
+    .breeze__content {
+        display: flex;
+        justify-content: space-between;
+
+        .breeze__item {
+            width: 60%;
+
+            .item__top {
+                display: flex;
+
+                .top__text {
+                    margin-right: 20px;
+                }
+            }
+
+            .item__img {
+                width: 100%;
+            }
+        }
+
+        .breeze__popular {
+            width: 35%;
+
+            .popular__list {
+                width: 100%;
+            }
+
+            .list__item {
+                width: 100%;
+
+                .item__link {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    background: url('../images/news/2.png') center center no-repeat;  
+                    background-size: cover;
+                    color: #ffffff;
+                    text-decoration: none;
+                    padding: 30px; 
+                    margin-bottom: 30px;
+                    transition: .3s;
+                    
+                    &:hover {
+                        opacity: .8;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1147,3 +1147,103 @@ ul {
     @media screen and (max-width: 500px) {
       .contract .ready__price .price__btn {
         margin-left: 0; } }
+
+.question .question__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media screen and (max-width: 500px) {
+    .question .question__top {
+      flex-direction: column;
+      margin-bottom: 25px; } }
+
+.question .question__list {
+  display: flex;
+  flex-direction: column; }
+  .question .question__list .list__item {
+    border-bottom: 1px solid #0133A4;
+    margin-bottom: 25px;
+    padding-bottom: 25px; }
+    .question .question__list .list__item .item__question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer; }
+    .question .question__list .list__item .question__open {
+      background: #0133A4;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      font-size: 30px; }
+    .question .question__list .list__item .open__minus {
+      display: none; }
+    .question .question__list .list__item .item__answer {
+      margin-top: 25px;
+      display: none; }
+
+.info .info__table {
+  border-collapse: collapse; }
+  .info .info__table .table__col {
+    border: 1px solid #0133A4;
+    padding: 10px; }
+  .info .info__table .table__row {
+    cursor: pointer;
+    transition: .3s; }
+    .info .info__table .table__row:hover {
+      background: #0133A4;
+      color: #ffffff; }
+
+.geography .geography__content {
+  display: flex;
+  justify-content: space-between; }
+  @media screen and (max-width: 500px) {
+    .geography .geography__content {
+      flex-direction: column; } }
+  .geography .geography__content .content__text {
+    padding-right: 20px;
+    width: 70%; }
+    @media screen and (max-width: 500px) {
+      .geography .geography__content .content__text {
+        width: 100%; } }
+  .geography .geography__content .content__img {
+    width: 30%; }
+    @media screen and (max-width: 500px) {
+      .geography .geography__content .content__img {
+        width: 100%; } }
+    .geography .geography__content .content__img .img__img {
+      width: 100%; }
+
+.breeze .breeze__content {
+  display: flex;
+  justify-content: space-between; }
+  .breeze .breeze__content .breeze__item {
+    width: 60%; }
+    .breeze .breeze__content .breeze__item .item__top {
+      display: flex; }
+      .breeze .breeze__content .breeze__item .item__top .top__text {
+        margin-right: 20px; }
+    .breeze .breeze__content .breeze__item .item__img {
+      width: 100%; }
+  .breeze .breeze__content .breeze__popular {
+    width: 35%; }
+    .breeze .breeze__content .breeze__popular .popular__list {
+      width: 100%; }
+    .breeze .breeze__content .breeze__popular .list__item {
+      width: 100%; }
+      .breeze .breeze__content .breeze__popular .list__item .item__link {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background: url("../images/news/2.png") center center no-repeat;
+        background-size: cover;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 30px;
+        margin-bottom: 30px;
+        transition: .3s; }
+        .breeze .breeze__content .breeze__popular .list__item .item__link:hover {
+          opacity: .8; }

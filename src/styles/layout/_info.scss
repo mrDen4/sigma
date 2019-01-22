@@ -1,0 +1,21 @@
+.info {
+
+    .info__table {
+        border-collapse: collapse;
+
+        .table__col {
+            border: 1px solid $blue;
+            padding: 10px;
+        }
+
+        .table__row {
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover {
+                background: $blue;
+                color: #ffffff;
+            }
+        }
+    }
+}

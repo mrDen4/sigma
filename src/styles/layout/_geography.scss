@@ -1,0 +1,32 @@
+.geography {
+
+    .geography__content {
+        display: flex;
+        justify-content: space-between;
+
+        @include phones() {
+            flex-direction: column;
+        }
+
+        .content__text {
+            padding-right: 20px;
+            width: 70%;
+
+            @include phones() {
+                width: 100%;
+            }
+        }
+
+        .content__img {
+            width: 30%;
+
+            @include phones() {
+                width: 100%;
+            }
+
+            .img__img {
+                width: 100%;
+            }
+        }
+    }
+}
