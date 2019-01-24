@@ -84,9 +84,9 @@
                     <div class="form__block form__block--btns">
                         <label class="block__label">Продажа или аренда:</label>
                         <input id="sell" name="sell-rent" value="sell" type="radio" class="block__radio">
-                        <label for="sell" class="block__radio-label">Продажа</label>
+                        <label for="sell" class="block__radio-label block__radio-label--sell">Продажа</label>
                         <input id="rent" name="sell-rent" value="rent" type="radio" class="block__radio">
-                        <label for="rent" class="block__radio-label">Аренда</label>
+                        <label for="rent" class="block__radio-label block__radio-label--rent">Аренда</label>
                     </div>
                     <div class="form__block">
                         <label for="area" class="block__label">Выберите район города Челябинск:</label>
@@ -105,10 +105,10 @@
                     </div>
                     <div class="form__block">
                         <label class="block__label">Тип квартиры</label>
-                        <label for="studio" class="block__radio-label">Студия</label>
                         <input id="studio" name="type-appart" value="studio" type="radio" class="block__radio">
-                        <label for="penthouse" class="block__radio-label">Пентхаус</label>
+                        <label for="studio" class="block__radio-label">Студия</label>
                         <input id="penthouse" name="type-appart" value="penthouse" type="radio" class="block__radio">
+                        <label for="penthouse" class="block__radio-label">Пентхаус</label>
                     </div>
                     <div class="form__block">
                         <label for="floor" class="block__label">Этаж:</label>
@@ -144,7 +144,8 @@
                     <div class="form__block">
                         <label for="price-metr" class="block__label">Цена за м²:</label>
                         <input type="text" class="block__inp" placeholder="75 350">
-                        <input type="checkbox" class="block__inp-check"> Возможен торг
+                        <input id="check" type="checkbox" class="block__inp-check"> 
+                        <label for="check" class="block__check-label">Возможен торг</label> 
                     </div>
                     <h2 class="form__title">4 Шаг: Фотографии или видео</h2>
                     <p class="form__text">
@@ -160,19 +161,20 @@
                     </p>
                     <div class="form__block">
                         <textarea name="about" id="about" cols="30" rows="10" class="block__textarea" placeholder="Подробное описание"></textarea>
-                        <input type="checkbox" class="block__inp-check"> Разрешить комментировать объявление.
+                        <input id="accept-comment" type="checkbox" class="block__inp-check"> 
+                        <label for="accept-comment" class="block__check-label">Разрешить комментировать объявление.</label> 
                     </div>
                     <h2 class="form__title">6 Шаг: Контакты продовца</h2>
                     <div class="form__block">
                         <label for="mobile" class="block__label">Номер мобильного телефона:</label>
                         <input type="text" class="block__inp" placeholder="+7 (351) 776‒85‒70">
-                        <button class="block__btn">Добавить еще один номер</button>
+                        <button class="btn block__btn">Добавить еще один номер</button>
                     </div>
                     <div class="form__block">
-                        <input type="checkbox" class="block__inp-check">
-                        <lable class="block__label">Я согласен с условиями "Соглашения о предоставлении права публикации объявления"</lable>
+                        <input id="accept-conf" type="checkbox" class="block__inp-check">
+                        <label for="accept-conf" class="block__check-label">Я согласен с условиями "Соглашения о предоставлении права публикации объявления"</label>
                     </div>
-                    <button class="form__btn">Разместить объявление</button>
+                    <button class="btn form__btn">Разместить объявление</button>
                 </form>
             </div>
         </section>

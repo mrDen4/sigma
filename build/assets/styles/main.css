@@ -1358,13 +1358,43 @@ ul {
     padding: 10px; }
   .apartform .form__block .block__label {
     width: 370px; }
+  .apartform .form__block .block__radio-label, .apartform .form__block .block__check-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    margin-right: 30px;
+    margin-left: 30px; }
+    .apartform .form__block .block__radio-label:before, .apartform .form__block .block__check-label:before {
+      content: "";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25px;
+      height: 25px;
+      margin-right: 25px;
+      position: absolute;
+      left: -30px;
+      background-color: #EEEEEE; }
+  .apartform .form__block .block__check-label {
+    margin-left: 40px; }
+  .apartform .form__block .block__radio:checked + .block__radio-label:before {
+    content: "Да";
+    color: #0133A4; }
+  .apartform .form__block .block__inp-check:checked + .block__check-label:before {
+    content: "Да";
+    color: #0133A4; }
+  .apartform .form__block .block__radio, .apartform .form__block .block__inp-check {
+    display: none; }
   .apartform .form__block--btns .block__radio-label {
     display: inline-block;
     cursor: pointer;
     position: relative;
     width: 170px;
     height: 50px;
-    margin-right: 20px; }
+    margin-right: 20px;
+    margin-left: 0; }
     .apartform .form__block--btns .block__radio-label:before {
       content: "Продажа";
       display: flex;
@@ -1376,11 +1406,24 @@ ul {
       position: absolute;
       left: 0;
       bottom: 1px;
-      background-color: #EEEEEE;
-      box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.8); }
-    .apartform .form__block--btns .block__radio-label .block__radio:checked + .block__radio-label:before {
-      content: "Продажа";
-      color: #ffffff;
-      background: #0133A4; }
+      background-color: #EEEEEE; }
+    .apartform .form__block--btns .block__radio-label--rent:before {
+      content: "Аренда"; }
+  .apartform .form__block--btns .block__radio:checked + .block__radio-label--sell:before {
+    content: "Продажа";
+    color: #ffffff;
+    background: #0133A4; }
+  .apartform .form__block--btns .block__radio:checked + .block__radio-label--rent:before {
+    content: "Аренда";
+    color: #ffffff;
+    background: #0133A4; }
   .apartform .form__block--btns .block__radio {
     display: none; }
+  .apartform .form__block .block__textarea {
+    background: #EEEEEE;
+    color: #444245;
+    padding: 15px;
+    width: 670px;
+    border: none; }
+  .apartform .form__block .block__btn {
+    margin-left: 20px; }

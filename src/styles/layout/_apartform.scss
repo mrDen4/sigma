@@ -26,6 +26,47 @@
             width: 370px;
         }
 
+        .block__radio-label, .block__check-label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+            margin-right: 30px;
+            margin-left: 30px;
+
+            &:before {
+                content: "";
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 25px;
+                height: 25px;
+                margin-right: 25px;
+                position: absolute;
+                left: -30px;
+                background-color: #EEEEEE;
+            } 
+        }
+        
+        .block__check-label {
+            margin-left: 40px;
+        }
+
+        .block__radio:checked + .block__radio-label:before {
+            content: "Да";
+            color: $blue;
+        }
+
+        .block__inp-check:checked + .block__check-label:before {
+            content: "Да";
+            color: $blue;
+        }
+
+        .block__radio, .block__inp-check {
+            display: none;
+        }
+
         &--btns {
             .block__radio-label {
                 display: inline-block;
@@ -34,6 +75,7 @@
                 width: 170px;
                 height: 50px;
                 margin-right: 20px;
+                margin-left: 0;
     
                 &:before {
                     content: "Продажа";
@@ -47,20 +89,40 @@
                     left: 0;
                     bottom: 1px;
                     background-color: #EEEEEE;
-                    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+                } 
+                
+                &--rent:before {
+                    content: "Аренда";
                 }
-    
-                .block__radio:checked + .block__radio-label:before {
-                        content: "Продажа";
-                        color: #ffffff;
-                        background: $blue;
-                    }
-                    
+            }
+
+            .block__radio:checked + .block__radio-label--sell:before {
+                content: "Продажа";
+                color: #ffffff;
+                background: $blue;
+            }
+
+            .block__radio:checked + .block__radio-label--rent:before {
+                content: "Аренда";
+                color: #ffffff;
+                background: $blue;
             }
     
             .block__radio {
                 display: none;
             }
+        }
+
+        .block__textarea {
+            background: #EEEEEE;
+            color: $black;
+            padding: 15px;
+            width: 670px;
+            border: none;
+        }
+
+        .block__btn {
+            margin-left: 20px;
         }
     }
 }
