@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сигма</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__top">
+                <div class="container top__container">
+                    <p class="top__text">
+                        Срочный выкуп и быстрая продажа недвижимости в Челябинске и области
+                    </p>
+                    <ul class="top__socials">
+                        <li class="socials__item">
+                            <a href="#" class="item__link">
+                                <img src="./assets/images/socials/instagram.png" alt="instagram" class="link__img">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="item__link">
+                                <img src="./assets/images/socials/facebook.png" alt="facebook" class="link__img">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="item__link">
+                                <img src="./assets/images/socials/vk.png" alt="vk" class="link__img">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="top__address">
+                        <p class="address__text"><i class="fas fa-map-marker-alt"></i> г. Челябинск, ул. Братьев
+                            Кашириных 86</p>
+                    </div>
+                    <a href="mailto:74sigma@mail.ru" class="top__mail">
+                        <i class="fas fa-envelope"></i>
+                        74sigma@mail.ru
+                    </a>
+                    <div class="top__contacts">
+                        <a href="tel:+73517768570" class="contacts__phone">+7 (351) 776‒85‒70</a>
+                        <button class="button contacts__btn">Обратный звонок</button>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="container bottom__container">
+                    <a href="#" class="bottom__logo">
+                        <img src="./assets/images/logo.png" alt="Sigma74" class="logo__img">
+                    </a>
+                    <ul class="bottom__menu">
+                        <li class="menu__item"><a href="#" class="item__link">Главная</a></li>
+                        <li class="menu__item"><a href="#" class="item__link">Недвижимость</a></li>
+                        <li class="menu__item"><a href="#" class="item__link">услуги</a></li>
+                        <li class="menu__item"><a href="#" class="item__link">Наши работы</a></li>
+                        <li class="menu__item"><a href="#" class="item__link">Полезные материалы</a></li>
+                        <li class="menu__item"><a href="#" class="item__link">География продаж</a></li>
+                        <li class="menu__item"><a href="#" class="item__link">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="section apartform">
+            <div class="container apartform__container">
+                <h1 class="title apartform__title">Оставить информацию о вашей недвижимости</h1>
+                <form method="POST" class="apartform__form">
+                    <h2 class="form__title">1 Шаг: Основная информация</h2>
+                    <div class="form__block">
+                        <label for="category" class="block__label">Категория недвижимости:</label>
+                        <select name="category" id="category" class="block__inp">
+                            <option value="secondary" selected >Вторичное жилье</option>
+                            <option value="new">Новая квартира</option>
+                        </select>
+                    </div>
+                    <div class="form__block form__block--btns">
+                        <label class="block__label">Продажа или аренда:</label>
+                        <input id="sell" name="sell-rent" value="sell" type="radio" class="block__radio">
+                        <label for="sell" class="block__radio-label">Продажа</label>
+                        <input id="rent" name="sell-rent" value="rent" type="radio" class="block__radio">
+                        <label for="rent" class="block__radio-label">Аренда</label>
+                    </div>
+                    <div class="form__block">
+                        <label for="area" class="block__label">Выберите район города Челябинск:</label>
+                        <select name="area" id="area" class="block__inp">
+                            <option value="metalurgicheski" selected >Металлургический</option>
+                            <option value="another">Другой</option>
+                        </select>
+                    </div>
+                    <h2 class="form__title">2 Шаг: Основные параметры</h2>
+                    <div class="form__block">
+                        <label for="rooms" class="block__label">Количество комнат:</label>
+                        <select name="rooms" id="rooms" class="block__inp">
+                            <option value="1" selected >1 комната</option>
+                            <option value="2">2 комнаты</option>
+                        </select>
+                    </div>
+                    <div class="form__block">
+                        <label class="block__label">Тип квартиры</label>
+                        <label for="studio" class="block__radio-label">Студия</label>
+                        <input id="studio" name="type-appart" value="studio" type="radio" class="block__radio">
+                        <label for="penthouse" class="block__radio-label">Пентхаус</label>
+                        <input id="penthouse" name="type-appart" value="penthouse" type="radio" class="block__radio">
+                    </div>
+                    <div class="form__block">
+                        <label for="floor" class="block__label">Этаж:</label>
+                        <select name="floor" id="floor" class="block__inp">
+                            <option value="1" selected >1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                    <div class="form__block">
+                        <label for="type-house" class="block__label">Тип дома:</label>
+                        <select name="type-house" id="type-house" class="block__inp">
+                            <option value="individual" selected >Индивидуальный проект</option>
+                            <option value="another">другой</option>
+                        </select>
+                    </div>
+                    <div class="form__block">
+                        <label for="square" class="block__label">Общая площаь м²:</label>
+                        <input type="text" class="block__inp" placeholder="65 м²">
+                    </div>
+                    <div class="form__block">
+                        <label for="living" class="block__label">Жилая м²:</label>
+                        <input type="text" class="block__inp" placeholder="57 м²">
+                    </div>
+                    <div class="form__block">
+                        <label for="kitchen" class="block__label">Кухня м²:</label>
+                        <input type="text" class="block__inp" placeholder="12 м²">
+                    </div>
+                    <h2 class="form__title">3 Шаг: Стоимость</h2>
+                    <div class="form__block">
+                        <label for="price" class="block__label">Цена за объект:</label>
+                        <input type="text" class="block__inp" placeholder="1 000 000">
+                    </div>
+                    <div class="form__block">
+                        <label for="price-metr" class="block__label">Цена за м²:</label>
+                        <input type="text" class="block__inp" placeholder="75 350">
+                        <input type="checkbox" class="block__inp-check"> Возможен торг
+                    </div>
+                    <h2 class="form__title">4 Шаг: Фотографии или видео</h2>
+                    <p class="form__text">
+                        Максимальный размер одного фото: 8 Мб. Форматы фото: JPEG, JPG, PNG.
+                    </p>
+                    <div class="form__block">
+                        <input type="file" class="block__inp-file">
+                        <input type="file" class="block__inp-file">
+                    </div>
+                    <h2 class="form__title">5 Шаг: Описание объкта</h2>
+                    <p class="form__text">
+                        Данное описание будет отображаться в объявлении и поможет быстро продать объект
+                    </p>
+                    <div class="form__block">
+                        <textarea name="about" id="about" cols="30" rows="10" class="block__textarea" placeholder="Подробное описание"></textarea>
+                        <input type="checkbox" class="block__inp-check"> Разрешить комментировать объявление.
+                    </div>
+                    <h2 class="form__title">6 Шаг: Контакты продовца</h2>
+                    <div class="form__block">
+                        <label for="mobile" class="block__label">Номер мобильного телефона:</label>
+                        <input type="text" class="block__inp" placeholder="+7 (351) 776‒85‒70">
+                        <button class="block__btn">Добавить еще один номер</button>
+                    </div>
+                    <div class="form__block">
+                        <input type="checkbox" class="block__inp-check">
+                        <lable class="block__label">Я согласен с условиями "Соглашения о предоставлении права публикации объявления"</lable>
+                    </div>
+                    <button class="form__btn">Разместить объявление</button>
+                </form>
+            </div>
+        </section>
+        <section class="section callback">
+            <div class="container callback__container">
+                <div class="callback__content">
+                    <h2 class="title callback__title">Остались вопросы?</h2>
+                    <p class="callback__text">Оставьте заявку и наш менеджер перезвонит вам в течение 30 минутс и с
+                        радостью ответит на все ваши вопросы!</p>
+                    <form class="callback__form">
+                        <div class="form__row">
+                            <div class="form__section">
+                                <p class="form__text">Ваше имя</p>
+                                <input type="text" class="form__inp" placeholder="Александра">
+                            </div>
+                            <div class="form__section">
+                                <p class="form__text">Ваш номер телефона</p>
+                                <input type="text" class="form__inp" placeholder="+7 (351) 776‒85‒70">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__section">
+                                <p class="form__text">Ваш номер телефона</p>
+                                <input type="text" class="form__inp" placeholder="+7 (351) 776‒85‒70">
+                            </div>
+                            <button class="btn form__btn">Оставить заявку</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__top">
+                    <div class="footer__col">
+                        <a href="#" class="footer__logo">
+                            <img src="./assets/images/logo.png" alt="Sigma74" class="logo__img">
+                        </a>
+                        <p class="footer__text">
+                            Срочный выкуп и быстрая продажа недвижимости в Челябинске и области
+                        </p>
+                    </div>
+                    <div class="footer__col">
+                        <h2 class="title footer__title">навигация по сайту</h2>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="item__link">Главная</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Наши работы</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">География продаж</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h2 class="title footer__title">Недвижимость</h2>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <p class="item__text">Продажа</p>
+                            </li>
+                            <li class="footer__item"><a href="#" class="item__link">Новая квартира</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Вторичное жилье</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Земельные участки</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Коммерческая</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Cад</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Гараж</a></li>
+                            <li class="footer__item">
+                                <p class="item__text">Аренда</p>
+                            </li>
+                            <li class="footer__item"><a href="#" class="item__link">Вторичное жилье</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Коммерческая</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h2 class="title footer__title">наши услуги</h2>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="item__link">Как составить договор дарения,
+                                    купли-продажи</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Узаконивание перепланировок</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Оформление земельных участков</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Юридическое сопровождение сделки
+                                    купли-продажи</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Срочный выкуп квартир</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Оформление наследства</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Составление исковых заявлений в
+                                    суд,
+                                    ведение дел в суде</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Приватизация</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Ипотека, материнский (семейный)
+                                    капитал</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h2 class="title footer__title">Полезные материалы</h2>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="item__link">Новости и полезные статьи</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Вопросы-ответы</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Районы Челябинска</a></li>
+                            <li class="footer__item"><a href="#" class="item__link">Адреса и телефоны служб</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h2 class="title footer__title">Контакты</h2>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="item__link">+7 (351) 776‒85‒70</a>
+                                <button class="footer__btn">Обратный звонок</button>
+                            </li>
+                            <li class="footer__item"><a href="mailto:74sigma@mail.ru" class="item__link"><i class="fas fa-envelope"></i>
+                                    74sigma@mail.ru</a></li>
+                            <li class="footer__item"><i class="fas fa-map-marker-alt"></i> г. Челябинск, ул. Братьев
+                                Кашириных 86</li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__icon">
+                                    <img src="./assets/images/socials/instagram.png" alt="instagram" class="link__img">
+                                </a>
+                                <a href="#" class="footer__icon">
+                                    <img src="./assets/images/socials/facebook.png" alt="facebook" class="link__img">
+                                </a>
+                                <a href="#" class="footer__icon">
+                                    <img src="./assets/images/socials/vk.png" alt="vk" class="link__img">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__bot">
+                    <p class="footer__text">© Агенство недвижимости «СИГМА», 2018</p>
+                    <a href="#" class="footer__rp">
+                        <p class="rp__text">Создание и продвижение сайта</p>
+                        <img src="./assets/images/rp-logo.png" alt="logo" class="rp__logo">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/scripts/main.js"></script>
+</body>
+
+</html>

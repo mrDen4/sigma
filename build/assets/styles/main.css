@@ -1339,3 +1339,48 @@ ul {
         margin-top: 30px; }
         .contacts .contacts__map .map__text .text__socials .socials__item {
           margin-right: 10px; }
+
+.apartform .form__title {
+  color: #444245;
+  font-size: 24px; }
+
+.apartform .form__block {
+  display: flex;
+  margin-bottom: 20px; }
+  .apartform .form__block .block__label {
+    color: #212121;
+    font-size: 14px; }
+  .apartform .form__block .block__inp {
+    background: #EEEEEE;
+    color: #444245;
+    border: none;
+    width: 350px;
+    padding: 10px; }
+  .apartform .form__block .block__label {
+    width: 370px; }
+  .apartform .form__block--btns .block__radio-label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    width: 170px;
+    height: 50px;
+    margin-right: 20px; }
+    .apartform .form__block--btns .block__radio-label:before {
+      content: "Продажа";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 170px;
+      height: 50px;
+      margin-right: 10px;
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+      background-color: #EEEEEE;
+      box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.8); }
+    .apartform .form__block--btns .block__radio-label .block__radio:checked + .block__radio-label:before {
+      content: "Продажа";
+      color: #ffffff;
+      background: #0133A4; }
+  .apartform .form__block--btns .block__radio {
+    display: none; }
