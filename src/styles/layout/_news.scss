@@ -51,6 +51,11 @@
             flex-direction: column;
             padding: 20px;
             text-decoration: none;
+            transition: .3s;
+
+            &:hover {
+                opacity: .8;
+            }
 
             @include tablets() {
                 width: 45%;
@@ -75,6 +80,11 @@
                 padding: 20px;
                 color: #ffff;
                 text-decoration: none;
+                transition: .3s;
+
+                &:hover {
+                    opacity: .8;
+                }
             }
 
             .section__btn {
