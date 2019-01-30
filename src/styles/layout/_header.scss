@@ -122,9 +122,34 @@
         .menu__item {
             margin-right: 30px;
             height: 100%;
+            position: relative;
 
             &:last-child {
                 margin-right: 0;
+            }
+
+            .item__submenu {
+                display: flex;
+                background: #F5F5F5;
+                position: absolute;
+                z-index: 99;
+                width: 520px;
+                height: 0;
+                padding: 0;
+                overflow: hidden;
+
+                &--active {
+                    padding: 15px;
+                    height: initial;
+                }
+
+                .submenu__col {
+                    margin-right: 20px;
+                }
+
+                .col__item {
+                    margin-bottom: 15px;
+                }
             }
         }
 

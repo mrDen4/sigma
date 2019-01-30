@@ -5,6 +5,19 @@ $(document).ready(function () {
     $('.popup__callback').toggleClass('popup__callback--active');
   });
 
+  $('#property').on('mouseenter', function () {
+    $('.item__submenu--property').toggleClass('item__submenu--active');
+  });
+
+  $('#info').on('mouseenter', function () {
+    $('.item__submenu--info').toggleClass('item__submenu--active');
+  });
+
+  $('.item__submenu--info, .item__submenu--property').on('mouseleave', function () {
+    $('.item__submenu--info').removeClass('item__submenu--active');
+    $('.item__submenu--property').removeClass('item__submenu--active');
+  });
+
   $('.hot__slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
