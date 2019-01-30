@@ -1,5 +1,10 @@
 $(document).ready(function () {
 
+  $('.contacts__btn, .bg, .popup__callback .callback__btn').on('click', function () {
+    $('.bg').toggleClass('bg--active');
+    $('.popup__callback').toggleClass('popup__callback--active');
+  });
+
   $('.hot__slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,

@@ -1,0 +1,76 @@
+.popup__callback {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background: #ffffff;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+    transform: translateY(-9999px);
+    transition: .3s;
+    z-index: 99;
+
+    &--active {
+        transform: translateY(0);
+    }
+
+    .callback__btn {
+        position: absolute;
+        border: none;
+        color: $blue;
+        font-size: 30px;
+        background: none;
+        cursor: pointer;
+        right: 10px;
+        top: 10px;
+        transition: .3s;
+
+        &:hover {
+            color: $black;
+            transform: rotate(90deg);
+        }
+    }
+
+    .callback__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .form__inp {
+        height: 40px;
+        background: none;
+        border: 1px solid $blue;
+        margin-bottom: 20px;
+        color: $black;
+        width: 90%;
+        padding-left: 10px;
+    }
+
+    .form__btn {
+        width: 90%;
+    }
+
+    .form__title {
+        font-size: 28px;
+    }
+}
+
+.bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #000000;
+    opacity: .8;
+    display: none;
+
+    &--active {
+        display: inherit;
+    }
+}
