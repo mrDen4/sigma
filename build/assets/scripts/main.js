@@ -62,7 +62,7 @@ $(document).ready(function () {
   //   return false;
   // });
 
-  $('.hot__slider').slick({
+  $('.active .hot__slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow: $('.btn__btn--arrow-left'),
