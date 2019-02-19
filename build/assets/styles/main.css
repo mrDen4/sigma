@@ -321,10 +321,14 @@ ul {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  color: #000; }
   @media screen and (max-width: 770px) {
     .hot .hot__btns {
       flex-wrap: wrap; } }
+  .hot .hot__btns .active {
+    background: #0133A4;
+    color: #ffffff; }
   @media screen and (max-width: 770px) {
     .hot .hot__btns .btns__btn {
       width: 45%;
@@ -340,9 +344,6 @@ ul {
     transition: .3s;
     margin-right: 10px; }
     .hot .hot__btns .btn__btn:hover {
-      background: #0133A4;
-      color: #ffffff; }
-    .hot .hot__btns .btn__btn--active {
       background: #0133A4;
       color: #ffffff; }
   .hot .hot__btns .btns__btn--arrow {

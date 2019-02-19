@@ -5,9 +5,15 @@
         width: 100%;
         align-items: center;
         justify-content: space-between;
+        color: #000;
 
         @include tablets() {
             flex-wrap: wrap;
+        }
+
+        .active {
+            background: $blue;
+            color: #ffffff;
         }
 
         .btns__btn {
@@ -32,11 +38,6 @@
                 background: $blue;
                 color: #ffffff;
             }
-
-            &--active {
-                background: $blue;
-                color: #ffffff;
-            }
         }
 
         .btns__btn--arrow {
@@ -44,6 +45,16 @@
             margin-right: 0;
         }
     }
+
+    // .hot__tabs {
+    //     .active {
+    //         display: block;
+    //     }
+    // }
+
+    // .hot__tab {
+    //     display: none;
+    // }
 
     .hot__slider {
         display: flex;
