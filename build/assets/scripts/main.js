@@ -21,6 +21,7 @@
           
           $(tabs).children("ul").children("li").click(function(){
               showPage(parseInt($(this).attr("data-page")));
+              $('.hot__tab .active .hot__slider').slick('reinit');
           });				
       };		
       return this.each(createTabs);
@@ -61,7 +62,7 @@ $(document).ready(function () {
   //   return false;
   // });
 
-  $('.hot__slider, .hot__slider--1, hot__slider--2, .hot__slider--3, .hot__slider--4, .hot__slider--5, .hot__slider--6').slick({
+  $('.hot__slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow: $('.btn__btn--arrow-left'),
